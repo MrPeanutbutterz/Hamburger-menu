@@ -1,0 +1,34 @@
+:root {
+    --main-bg-color: #D84282;
+}
+
+#menu {
+    background-color: var(--main-bg-color);
+    width: 35px;
+    height: 5px;
+    border-radius: 2px;
+    position: relative;
+    margin-top: 15px;
+}
+
+#menu::before,
+#menu::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: var(--main-bg-color);
+    width: 35px;
+    height: 5px;
+    border-radius: 2px;
+}
+
+
+#menu::before {
+    left: 0;
+    top: -8px;
+}
+
+#menu::after {
+    left: 0;
+    top: 8px;
+}
